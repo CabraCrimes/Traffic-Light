@@ -1,12 +1,12 @@
 
-/* 
 
-    You can write your own styles here...
+.purple{
+    background-color: purple;
+    border: none;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.purple-subtle{
+   background-color: rgb(170, 127, 170);
+   border: none;
+}
