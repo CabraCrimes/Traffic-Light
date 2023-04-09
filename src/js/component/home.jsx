@@ -37,20 +37,22 @@ const Home = () => {
 				
 			</div>
 
-			<button type="button" className="btn btn-success d-flex mx-auto  mt-2"onClick={()=>{
+			<div className="d-flex justify-content-center"> 
+				<button type="button" className="btn btn-success m-2 mt-2"onClick={()=>{
 
-				if (isCycle === 1) setRed(true), setYellow(false), setGreen(false), setPurple(false);
-				else if (isCycle === 2) setRed(false), setYellow(true), setGreen(false), setPurple(false);
-				else if (isCycle === 3) setRed(false), setYellow(false), setGreen(true), setPurple(false);
-				else setRed(false), setYellow(false), setGreen(false), setPurple(true);
-				
-				setCylce((isCycle % 4) + 1);
+					if (isCycle === 1) setRed(true), setYellow(false), setGreen(false), setPurple(false);
+					else if (isCycle === 2) setRed(false), setYellow(true), setGreen(false), setPurple(false);
+					else if (isCycle === 3) setRed(false), setYellow(false), setGreen(true), setPurple(false);
+					else setRed(false), setYellow(false), setGreen(false), setPurple(true);
+					
+					setCylce((isCycle % 4) + 1);
 
-			}}>Cycle</button>
+				}}>Cycle</button>
 
-			<button type="button" className="btn btn-danger d-flex mx-auto  mt-2" onClick={() => {
-				setShowButton(!isShowButton)
-			}}>Purple</button>
+				<button type="button" className="btn btn-danger m-2 mt-2" onClick={() => {
+					setShowButton(!isShowButton)
+				}}>Add Light</button>
+			</div>
 
 		</div>
 	);
